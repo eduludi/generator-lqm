@@ -28,6 +28,7 @@ Finally, initiate the generator in your desired folder:
 $ mkdir myApp
 $ cd myApp
 $ yo lqm
+$ grunt server
 ```
 ### Subgenerators
 
@@ -70,6 +71,8 @@ $ yo lqm:controller "Tasks"
 #### Full Scaffold (ala Rails)
 
 Work in progress... (coming soon)
+
+
 
 
 ### Getting To Know Yeoman
