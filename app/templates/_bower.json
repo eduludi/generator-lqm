@@ -1,0 +1,8 @@
+{
+  "name": "<%= _.slugify(applicationName) %>",
+  "version": "0.0.1",
+  "dependencies": {
+    "lungo": "latest",
+    "monocle": "latest"
+  }
+}

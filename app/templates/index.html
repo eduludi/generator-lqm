@@ -1,0 +1,45 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title><%= _.capitalize(applicationName) %></title>
+  <link rel="stylesheet" href="components/lungo/lungo.css">
+  <link rel="stylesheet" href="components/lungo/lungo.icon.css">
+  <link rel="stylesheet" href="components/lungo/lungo.theme.css">
+</head>
+<body>
+  <!--[if lt IE 7]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+  <![endif]-->
+  <aside id="options">
+      <header data-title="Options"></header>
+      <article class="active">
+      </article>
+  </aside>
+  <section id="main" data-aside="options-menu">
+    <header data-title="<%= applicationName %>">
+      <nav>
+        <button data-view-aside="options-menu" data-icon="menu"></button>
+      </nav>
+    </header>
+    <article id="main-article" class="active"></article>
+    <footer></footer>
+  </section>
+
+  <script src="components/quojs/quo.js"></script>
+  <script src="components/quojs/quo.debug.js"></script><!-- please disable this in production mode -->
+  <script src="components/lungo/lungo.js"></script>
+  <script src="components/monocle/monocle.js"></script>
+  <script src="app.js"></script>
+  <script>
+  //init here
+    Lungo.init({
+      name: "<%= _.slugify(applicationName) %>"
+    });
+  </script>
+</body>
+</html>
