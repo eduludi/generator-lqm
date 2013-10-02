@@ -1,7 +1,7 @@
 {
   "name": "generator-lqm",
-  "version": "0.1.0",
-  "description": "An Lungo-Quo-Monocle MVC app generator for Yeoman",
+  "version": "0.1.1",
+  "description": "A Lungo-Quo-Monocle MVC app generator for Yeoman",
   "keywords": [
     "lungo quo monocle yeoman-generator mvc"
   ],
@@ -21,7 +21,8 @@
     "test": "mocha"
   },
   "dependencies": {
-    "yeoman-generator": "~0.13.0"
+    "yeoman-generator": "~0.13.0",
+    "fleck": "~0.5.1"
   },
   "devDependencies": {
     "mocha": "~1.12.0"

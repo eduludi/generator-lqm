@@ -19,9 +19,6 @@ util.inherits(LqmGenerator, yeoman.generators.Base);
 LqmGenerator.prototype.askFor = function askFor() {
   var cb = this.async();
 
-  // have Yeoman greet the user.
-  //console.log(this.yeoman);
-
   var prompts = [{
     name: 'applicationName',
     message: 'What do you want to call your app?'
@@ -53,7 +50,6 @@ LqmGenerator.prototype.projectfiles = function projectfiles() {
   this.copy('editorconfig', '.editorconfig');
   this.copy('jshintrc', '.jshintrc');
 };
-
 
 LqmGenerator.prototype.runtime = function projectfiles() {
   this.copy('bowerrc', '.bowerrc');
