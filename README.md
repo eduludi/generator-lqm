@@ -1,18 +1,18 @@
 generator-lqm
 =============
 
-An [Lungo](http://lungo.tapquo.com)-[Quo](http://quojs.tapquo.com)-[Monocle](http://monocle.tapquo.com) MVC app generator for [Yeoman](http://yeoman.io).
+A [Lungo](http://lungo.tapquo.com)-[Quo](http://quojs.tapquo.com)-[Monocle](http://monocle.tapquo.com) MVC app generator for [Yeoman](http://yeoman.io).
 
 ## Getting Started
 
 ### Requirements
-1. [node](http://nodejs.org/)
-2. [git](http://git-scm.org/)
+1. [Node.js](http://nodejs.org/)
+2. [Git](http://git-scm.org/)
 3. Yeoman:
 
-```
-$ npm install -g yo
-```
+	```
+	$ npm install -g yo
+	```
 
 ### Install and Usage
 
@@ -47,7 +47,6 @@ $ yo lqm:model "Task name description done"
 
 ```
 $ yo  lqm:view "ViewName"
-
 ```
 
 Example:
