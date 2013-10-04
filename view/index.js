@@ -10,12 +10,13 @@ var ViewGenerator = module.exports = function ViewGenerator(args, options, confi
 
   this.viewName = fleck.singularize(this.name);
   this.pluralViewName = fleck.pluralize(this.name);
-  this.mustacheTemplatePath = 'app/templates/'+this._.underscored(this.viewName)+'.mustache';
+  this.viewPath ='app/views/'+this._.underscored(this.viewName)+'.coffee';
+  this.templatePath = 'app/templates/'+this._.underscored(this.viewName)+'.mustache';
 };
 
 util.inherits(ViewGenerator, yeoman.generators.NamedBase);
 
 ViewGenerator.prototype.files = function files() {
-  this.template('view.coffee', 'app/views/'+this._.underscored(this.viewName)+'.coffee');
-  this.template('view.mustache',this.mustacheTemplatePath);
+  this.template('view.coffee', this.viewPath);
+  this.template('view.mustache',this.templatePath);
 };
