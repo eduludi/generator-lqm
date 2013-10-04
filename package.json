@@ -1,9 +1,15 @@
 {
   "name": "generator-lqm",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "A Lungo-Quo-Monocle MVC app generator for Yeoman",
   "keywords": [
-    "yeoman-generator, yeoman, generator, mvc, lungo, quo, monocle"
+    "yeoman-generator", 
+    "yeoman", 
+    "generator", 
+    "mvc", 
+    "lungo", 
+    "quo",
+    "monocle"
   ],
   "homepage": "https://github.com/eduludi/generator-lqm",
   "bugs": "https://github.com/eduludi/generator-lqm/issues",
